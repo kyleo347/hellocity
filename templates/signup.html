@@ -1,0 +1,27 @@
+<form method="post">
+    Please Register
+    <br>
+    <label>
+        Name:
+        <input type="text" name="username" value="{{username}}">
+    </label>
+	<br>
+    <label>
+        Password:
+        <input type="password" name="password" value="{{password}}">
+    </label>
+	<br>
+    <label>
+        Verify Password:
+        <input type="password" name="verify" value="{{verify}}">
+    </label>
+	<br>
+    <label>
+        Email (optional):
+        <input type="text" name="email" value="{{email}}">
+    </label>
+	<br>
+    <div style="color: red">{{error|safe}}</div>
+    <br><br>
+    <input type="submit">
+</form>

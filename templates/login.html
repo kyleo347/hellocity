@@ -1,0 +1,17 @@
+<form method="post">
+    Please sign in:
+    <br>
+    <label>
+        Username:
+        <input type="text" name="username" value="{{username}}">
+    </label>
+	<br>
+    <label>
+        Password:
+        <input type="password" name="password" value="{{password}}">
+    </label>
+	<br>
+    <div style="color: red">{{error|safe}}</div>
+    <br><br>
+    <input type="submit">
+</form>
